@@ -1,0 +1,11 @@
+{
+  "name": "gamify-app",
+  "version": "2.1.0",
+  "private": true,
+  "description": "گی‌میفای ۲ — app.gamifi.ir (بدون وابستگی npm)",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node --check server.cjs && node --check dist/addon.js && node -e \"const h=require('fs').readFileSync('dist/index.html','utf8');if(!h.includes('addon.js'))process.exit(1);console.log('ok')\""
+  }
+}
